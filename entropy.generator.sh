@@ -7,4 +7,5 @@ echo "$RANDOM" | md5sum | awk '{print $1}' > file.with.random.content
 TODAY=$(date -u +"%Y/%m/%d %H:%M:%S")
 git add file.with.random.content
 git commit -m "Edit file - $TODAY"
+git push origin master
 
